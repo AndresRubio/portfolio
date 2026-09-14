@@ -179,3 +179,7 @@ a:hover { text-decoration: underline; }
   color: var(--accent);
   text-decoration: none;
 }
+
+.about-text {
+  max-width: 65ch;
+}
