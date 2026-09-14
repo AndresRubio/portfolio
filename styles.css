@@ -316,3 +316,10 @@ a:hover { text-decoration: underline; }
   display: inline-block;
   min-width: 4.5rem;
 }
+
+.contact-links {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+  margin-top: var(--space-3);
+}
