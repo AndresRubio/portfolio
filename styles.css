@@ -183,3 +183,37 @@ a:hover { text-decoration: underline; }
 .about-text {
   max-width: 65ch;
 }
+
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.timeline-item {
+  padding: var(--space-3) 0;
+  border-top: 1px solid var(--border);
+}
+
+.timeline-item:first-child { border-top: none; }
+
+.timeline-meta {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--accent);
+  margin: 0 0 var(--space-1);
+}
+
+.timeline-role {
+  font-size: 1.1rem;
+  color: var(--text);
+  margin: 0 0 var(--space-1);
+}
+
+.timeline-item ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--text-dim);
+}
+
+.timeline-item li { margin-bottom: 0.3rem; }
