@@ -323,3 +323,19 @@ a:hover { text-decoration: underline; }
   flex-wrap: wrap;
   margin-top: var(--space-3);
 }
+
+.section {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.section.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+.hero {
+  opacity: 1;
+  transform: none;
+}
