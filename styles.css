@@ -294,3 +294,25 @@ a:hover { text-decoration: underline; }
   font-size: 0.85rem;
   margin-top: auto;
 }
+
+.education-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: var(--text-dim);
+}
+
+.education-list li {
+  padding: 0.5rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.education-list li:first-child { border-top: none; }
+
+.edu-year {
+  font-family: var(--font-mono);
+  color: var(--accent);
+  margin-right: var(--space-2);
+  display: inline-block;
+  min-width: 4.5rem;
+}
