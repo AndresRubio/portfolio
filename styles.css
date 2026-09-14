@@ -121,3 +121,61 @@ a:hover { text-decoration: underline; }
   .header-inner { flex-direction: column; gap: var(--space-1); align-items: flex-start; }
   .site-nav { gap: var(--space-2); font-size: 0.85rem; }
 }
+
+.hero {
+  padding-top: var(--space-6);
+  padding-bottom: var(--space-6);
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  color: var(--accent);
+  font-size: 0.9rem;
+  margin: 0 0 var(--space-1);
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  color: var(--text);
+  margin-bottom: var(--space-1);
+}
+
+.hero-title {
+  font-family: var(--font-mono);
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  color: var(--text-dim);
+  margin: 0 0 var(--space-3);
+}
+
+.hero-tagline {
+  font-size: 1.4rem;
+  color: var(--text);
+  margin: 0 0 var(--space-2);
+  max-width: 32ch;
+}
+
+.hero-sub {
+  max-width: 48ch;
+  margin: 0 0 var(--space-4);
+}
+
+.hero-links {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.icon-link {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  padding: var(--space-1) var(--space-2);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+}
+
+.icon-link:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  text-decoration: none;
+}
