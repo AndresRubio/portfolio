@@ -12,17 +12,21 @@ document.addEventListener('DOMContentLoaded', () => {
           revealObserver.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.15 });
+    }, { rootMargin: '0px 0px -10% 0px', threshold: 0 });
 
     sections.forEach((section) => revealObserver.observe(section));
 
     const navObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        navLinks.forEach((l) => {
+          l.classList.remove('active');
+          l.removeAttribute('aria-current');
+        });
         const link = document.querySelector(`.site-nav a[href="#${entry.target.id}"]`);
-        if (!link) return;
-        if (entry.isIntersecting) {
-          navLinks.forEach((l) => l.classList.remove('active'));
+        if (link) {
           link.classList.add('active');
+          link.setAttribute('aria-current', 'page');
         }
       });
     }, { rootMargin: '-40% 0px -50% 0px' });
